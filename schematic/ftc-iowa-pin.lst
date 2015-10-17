@@ -1,0 +1,160 @@
+eeschema (2013-may-18)-stable  >> Creation date: Thu 15 Oct 2015 08:25:08 PM CDT
+#Cmp ( order = Reference )
+| B101       CR2032      ;             ;             
+| C101       4.7uF       ;             ;             
+| C102       10uF        ;             ;             
+| C103       10uF        ;             ; DELETE      
+| C104       10uF        ;             ; DELETE      
+| C105       4.7uF       ;             ;             
+| C106       100nF       ;             ;             
+| C107       TOUCH       ;             ;             
+| C108       10nF        ;             ;             
+| C109       220nF       ;             ; DELETE      
+| C110       10uF        ;             ; DELETE      
+| C111       10uF        ;             ; DELETE      
+| D101       RED         ; ~           ;             
+| D102       RED         ; ~           ;             
+| D103       RED         ; ~           ;             
+| D104       RED         ; ~           ;             
+| D105       RED         ; ~           ;             
+| D106       RED         ; ~           ;             
+| D107       RED         ; ~           ;             
+| D108       RED         ; ~           ;             
+| D109       WHITE       ; ~           ;             
+| D110       WHITE       ; ~           ;             
+| D111       WHITE       ; ~           ;             
+| D112       WHITE       ; ~           ;             
+| D113       WHITE       ; ~           ;             
+| D114       WHITE       ; ~           ;             
+| D115       WHITE       ; ~           ;             
+| D116       WHITE       ; ~           ;             
+| D117       BLUE        ; ~           ;             
+| D118       BLUE        ; ~           ;             
+| D119       BLUE        ; ~           ;             
+| D120       BLUE        ; ~           ;             
+| D121       BLUE        ; ~           ;             
+| D122       BLUE        ; ~           ;             
+| D123       BLUE        ; ~           ;             
+| D124       BLUE        ; ~           ;             
+| D125       DIODE       ; ~           ; DELETE      
+| L101       4.7uH       ; ~           ;             
+| Q101       PMOS        ;             ;             
+| Q102       PMOS        ;             ;             
+| R101       470kΩ      ;             ; DELETE      
+| R102       220kΩ      ;             ;             
+| R103       390kΩ      ;             ;             
+| R104       470kΩ      ;             ; DELETE      
+| R105       0Ω         ;             ;             
+| R106       390kΩ      ;             ;             
+| R107       0Ω         ;             ; DELETE      
+| R108       0Ω         ;             ;             
+| R109       110kΩ      ;             ;             
+| R110       220kΩ      ;             ;             
+| R111       390kΩ      ;             ;             
+| R112       0Ω         ;             ;             
+| R113       0Ω         ;             ; DELETE      
+| R114       0Ω         ;             ;             
+| R115       0Ω         ;             ;             
+| R116       0Ω         ;             ;             
+| R117       0Ω         ;             ;             
+| R118       1MΩ        ;             ;             
+| R119       0Ω         ;             ;             
+| R120       0Ω         ;             ;             
+| R121       4.7kΩ      ;             ;             
+| R122       0Ω         ;             ; DELETE      
+| R123       0Ω         ;             ; DELETE      
+| SW101      POWER       ;             ;             
+| TP101      V5P5        ;             ;             
+| TP102      VBATT       ;             ;             
+| TP103      GND         ;             ;             
+| TP104      ICSPDAT     ;             ;             
+| TP105      ICSPCLK     ;             ;             
+| TP106      nMCLR       ;             ;             
+| TP107      RX          ;             ;             
+| U101       MCP6442     ;             ;             
+| U102       MCP1624     ; ~           ;             
+| U103       PIC16LF1704 ;             ;             
+| U104       LM2767      ;             ; DELETE      
+| U105       TPS61220    ; ~           ;             
+#End Cmp
+
+#Cmp ( order = Value )
+| CR2032       B101      ;             ;             
+| 10nF         C108      ;             ;             
+| 100nF        C106      ;             ;             
+| 220nF        C109      ;             ; DELETE      
+| 4.7uF        C101      ;             ;             
+| 4.7uF        C105      ;             ;             
+| 10uF         C102      ;             ;             
+| 10uF         C103      ;             ; DELETE      
+| 10uF         C104      ;             ; DELETE      
+| 10uF         C110      ;             ; DELETE      
+| 10uF         C111      ;             ; DELETE      
+| TOUCH        C107      ;             ;             
+| RED          D101      ; ~           ;             
+| RED          D102      ; ~           ;             
+| RED          D103      ; ~           ;             
+| RED          D104      ; ~           ;             
+| RED          D105      ; ~           ;             
+| RED          D106      ; ~           ;             
+| RED          D107      ; ~           ;             
+| RED          D108      ; ~           ;             
+| WHITE        D109      ; ~           ;             
+| WHITE        D110      ; ~           ;             
+| WHITE        D111      ; ~           ;             
+| WHITE        D112      ; ~           ;             
+| WHITE        D113      ; ~           ;             
+| WHITE        D114      ; ~           ;             
+| WHITE        D115      ; ~           ;             
+| WHITE        D116      ; ~           ;             
+| BLUE         D117      ; ~           ;             
+| BLUE         D118      ; ~           ;             
+| BLUE         D119      ; ~           ;             
+| BLUE         D120      ; ~           ;             
+| BLUE         D121      ; ~           ;             
+| BLUE         D122      ; ~           ;             
+| BLUE         D123      ; ~           ;             
+| BLUE         D124      ; ~           ;             
+| DIODE        D125      ; ~           ; DELETE      
+| 4.7uH        L101      ; ~           ;             
+| PMOS         Q101      ;             ;             
+| PMOS         Q102      ;             ;             
+| 4.7kΩ       R121      ;             ;             
+| 110kΩ       R109      ;             ;             
+| 220kΩ       R102      ;             ;             
+| 220kΩ       R110      ;             ;             
+| 390kΩ       R103      ;             ;             
+| 390kΩ       R106      ;             ;             
+| 390kΩ       R111      ;             ;             
+| 470kΩ       R101      ;             ; DELETE      
+| 470kΩ       R104      ;             ; DELETE      
+| 1MΩ         R118      ;             ;             
+| 0Ω          R105      ;             ;             
+| 0Ω          R107      ;             ; DELETE      
+| 0Ω          R108      ;             ;             
+| 0Ω          R112      ;             ;             
+| 0Ω          R113      ;             ; DELETE      
+| 0Ω          R114      ;             ;             
+| 0Ω          R115      ;             ;             
+| 0Ω          R116      ;             ;             
+| 0Ω          R117      ;             ;             
+| 0Ω          R119      ;             ;             
+| 0Ω          R120      ;             ;             
+| 0Ω          R122      ;             ; DELETE      
+| 0Ω          R123      ;             ; DELETE      
+| POWER        SW101     ;             ;             
+| V5P5         TP101     ;             ;             
+| VBATT        TP102     ;             ;             
+| GND          TP103     ;             ;             
+| ICSPDAT      TP104     ;             ;             
+| ICSPCLK      TP105     ;             ;             
+| nMCLR        TP106     ;             ;             
+| RX           TP107     ;             ;             
+| MCP6442      U101      ;             ;             
+| PIC16LF1704  U103      ;             ;             
+| LM2767       U104      ;             ; DELETE      
+| MCP1624      U102      ; ~           ;             
+| TPS61220     U105      ; ~           ;             
+#End Cmp
+
+#End List
