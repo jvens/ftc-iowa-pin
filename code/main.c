@@ -278,31 +278,53 @@ static void dac_set(unsigned char value)
 //                                             //
 /////////////////////////////////////////////////
 
+/**
+ * @brief Represents the registers for a GPIO bank.
+ * @todo make these pointers constant
+ */
 struct gpio_reg
 {
+    /// The input read value
     volatile unsigned char * port;
+    /// The direction, 0=output, 1=input
     volatile unsigned char * tris;
+    /// The output latch value
     volatile unsigned char * lat;
+    /// The input level to be considered 1
     volatile unsigned char * inlvl;
+    /// Open drain enabled when 1
     volatile unsigned char * odcon;
+    /// Turn on slewrate control
     volatile unsigned char * slrcon;
+    /// enable weak pullups
     volatile unsigned char * wpu;
 };
 
+/// GPIO bank A
+const struct gpio_reg GPIOA = {&PORTA, &TRISA, &LATA, &INLVLA, &ODCONA, &SLRCONA, &WPUA};
+/// GPIO bank B
+const struct gpio_reg GPIOC = {&PORTC, &TRISC, &LATC, &INLVLC, &ODCONC, &SLRCONC, &WPUC};
+
+/**
+ * @brief A single GPIO pin
+ */
 struct gpio_pin
 {
+    /// The register bank the pin is connected to
     const struct gpio_reg const * reg;
+    /// The pin on the bank that is this GPIO
     unsigned char pin;
 };
 
+/**
+ * Named GPIOs for this probject
+ */
 typedef enum gpio
 {
     SEL0, SEL1, RED0, RED1, WHITE0, WHITE1, BLUE0, BLUE1
 }gpio;
 
-const struct gpio_reg GPIOA = {&PORTA, &TRISA, &LATA, &INLVLA, &ODCONA, &SLRCONA, &WPUA};
-const struct gpio_reg GPIOC = {&PORTC, &TRISC, &LATC, &INLVLC, &ODCONC, &SLRCONC, &WPUC};
-
+/// The GPIOs for this project
 const struct gpio_pin gpios[] = 
 {
     {&GPIOA, 0}, // SEL0
@@ -325,6 +347,7 @@ typedef enum gpio_value
     LOW = 0, HIGH
 }gpio_value;
 
+/// @def Set the @param bit of the @param byte to @param value
 #define SET_BIT(byte, bit, value) (value ? byte |= 1 << bit : byte &= ~(1 << bit))
 
 inline void gpio_setMode(gpio g, gpio_mode mode)
